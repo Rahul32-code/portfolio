@@ -32,7 +32,22 @@ const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       className={cn(
-        "fixed  top-4 max-sm:top-7 right-5 max-sm:right-4 z-50 rounded-full transition-colors duration-300 cursor-pointer"
+        "fixed z-50 rounded-full cursor-pointer transition-colors duration-300",
+
+        // Default (base)
+        "top-4 ",
+
+        // Mobile (max-sm = <640px)
+        "max-sm:top-2 max-sm:right-4",
+
+        // Tablet (md = ≥768px)
+        "md:top-2 md:right-4",
+
+        // Laptop/Desktop (lg = ≥1024px)
+        "lg:top-2 lg:right-2",
+
+        // Large Desktop (xl = ≥1280px)
+        "xl:top-2 xl:right-4"
       )}
     >
       {isDarkMode ? (
