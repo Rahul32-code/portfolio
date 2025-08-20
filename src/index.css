@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @import "tailwindcss";
 
 @theme {
@@ -81,7 +84,7 @@
 
     --card: 222 47% 8%;
 
-    --primary: 250 65% 65%;
+    --primary: 183 35% 42%;
     --primary-foreground: 213 31% 91%;
 
     --border: 217 33% 20%;
@@ -164,4 +167,5 @@
 html,
 body {
   scroll-behavior: smooth;
+  font-family: 'Courier New', Courier, monospace;
 }
