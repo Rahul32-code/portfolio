@@ -118,13 +118,6 @@ const ContactSection = () => {
                     >
                       <Linkedin className="text-primary hover:opacity-75" />
                     </a>
-                    {/* <a
-                      href="https://twitter.com"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Twitter className="text-primary hover:opacity-75" />
-                    </a> */}
                     <a
                       href="https://github.com/Rahul32-code"
                       target="_blank"
@@ -133,14 +126,14 @@ const ContactSection = () => {
                       <Github className="text-primary hover:opacity-75" />
                     </a>
                     <a
-                      href="https://instagram.com"
+                      href="https://www.instagram.com/rahuldeveloper/"
                       target="_blank"
                       rel="noreferrer"
                     >
                       <Instagram className="text-primary hover:opacity-75" />
                     </a>
                     <a
-                      href="https://github.com/Rahul32-code"
+                      href="https://www.facebook.com/rahul.webdeveloper/"
                       target="_blank"
                       rel="noreferrer"
                     >
