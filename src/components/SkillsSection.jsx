@@ -79,7 +79,7 @@ const SkillsSection = () => {
               className={`px-4 py-2 rounded-full border text-sm font-medium transition duration-300 cursor-pointer ${
                 activeCategory === cat
                   ? "bg-primary text-white"
-                  : "bg-white text-black border-primary"
+                  : " text-white border-primary"
               }`}
             >
               {cat.charAt(0).toUpperCase() + cat.slice(1)}

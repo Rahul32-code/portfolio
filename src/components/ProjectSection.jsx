@@ -1,23 +1,25 @@
+import { useState } from "react";
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
-import mern_basic_crud from "../assets/project/mern_basic_crud.png";
+import mern_basic_crud from "@/assets/project/mern_basic_crud.png";
+import landingpage from "@/assets/project/landingpage.jpeg";
 
 const Projects = [
   {
     id: 1,
-    title: "Project 1",
-    description: "Basic MERN CRUD Application.",
+    title: "Basic CRUD Application",
+    description: "A full-stack MERN application for seamless data management with create, read, update, and delete functionality.",
     image: mern_basic_crud,
-    tags: ["tag1", "tag2", "tag3"],
+    tags: ["backend"],
     demoUrl: "https://mern-basic-crud-kypo.onrender.com/",
     githubUrl: "https://github.com/Rahul32-code/MERN_BASIC_CRUD",
   },
   {
     id: 2,
-    title: "Project 2",
-    description: "Description of Project 2",
-    image: "projects/project2.jpg",
-    tags: ["tag1", "tag2"],
-    demoUrl: "https://example.com/project2",
+    title: "React Landing Page",
+    description: "A sleek, responsive React landing page designed with Tailwind CSS for fast styling and Lucide React icons for a modern touch.",
+    image: landingpage,
+    tags: ["frontend"],
+    demoUrl: "https://abhishekservice.abhishekdm.com/",
     githubUrl: "#",
   },
   {
@@ -40,7 +42,18 @@ const Projects = [
   },
 ];
 
+const categories = ["all", "frontend", "backend"];
+
 const ProjectSection = () => {
+  const [activeCategory, setActiveCategory] = useState("all");
+
+  const filteredProjects =
+    activeCategory === "all"
+      ? Projects
+      : Projects.filter((project) =>
+          project.tags.includes(activeCategory)
+        );
+
   return (
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
@@ -49,14 +62,32 @@ const ProjectSection = () => {
         </h2>
 
         <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-          A Showcase Of The Projects I Have Worked On, Highlighting my Skills And Experience In Various Technologies.
+          A Showcase Of The Projects I Have Worked On, Highlighting my Skills
+          And Experience In Various Technologies.
         </p>
 
+        {/* Category Buttons */}
+        <div className="flex justify-center gap-4 mb-10 flex-wrap">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              className={`px-4 py-2 rounded-full border text-sm font-medium transition duration-300 cursor-pointer ${
+                activeCategory === cat
+                  ? "bg-primary text-white"
+                  : "text-white border-primary"
+              }`}
+            >
+              {cat.charAt(0).toUpperCase() + cat.slice(1)}
+            </button>
+          ))}
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {Projects.map((project) => (
+          {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="group rounded-lg overflow-hidden shadow-xs card-hover"
+              className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <div className="h-48 overflow-hidden">
                 <img

@@ -1,6 +1,6 @@
 // ContactSection.jsx or ContactSection.tsx
 import {
-    Facebook,
+  Facebook,
   Github,
   Instagram,
   Linkedin,
@@ -13,6 +13,26 @@ import {
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import * as Toast from "@radix-ui/react-toast";
+
+
+const socialLinks = [
+  {
+    icon: <Linkedin className="text-primary hover:opacity-75" />,
+    link: "https://www.linkedin.com/in/rahul-gupta-8497aa249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    icon: <Github className="text-primary hover:opacity-75" />,
+    link: "https://github.com/Rahul32-code",
+  },
+  {
+    icon: <Instagram className="text-primary hover:opacity-75" />,
+    link: "https://www.instagram.com/rahuldeveloper/",
+  },
+  {
+    icon: <Facebook className="text-primary hover:opacity-75" />,
+    link: "https://www.facebook.com/rahul.webdeveloper/",
+  },
+];
 
 const ContactSection = () => {
   const form = useRef(null);
@@ -29,10 +49,10 @@ const ContactSection = () => {
 
     try {
       const result = await emailjs.sendForm(
-        "service_ghcyqf8",           // ✅ Replace with your actual Service ID
-        "template_wshjxii",          // ✅ Replace with your actual Template ID
+        "service_ghcyqf8", // ✅ Replace with your actual Service ID
+        "template_wshjxii", // ✅ Replace with your actual Template ID
         form.current,
-        "yqJKHM_siEcNUONV1"          // ✅ Replace with your actual Public Key
+        "yqJKHM_siEcNUONV1" // ✅ Replace with your actual Public Key
       );
 
       console.log("SUCCESS!", result.text);
@@ -58,13 +78,16 @@ const ContactSection = () => {
             Get In <span className="text-primary">Touch</span>
           </h2>
           <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
-            I'd Love To Here From You-ReachOut For Any Opportunities Or Questions
+            I'd Love To Here From You-ReachOut For Any Opportunities Or
+            Questions
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Left column: contact info */}
             <div className="space-y-8">
-              <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-semibold mb-6">
+                Contact Information
+              </h3>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="p-3 rounded-full bg-primary/10">
@@ -111,34 +134,16 @@ const ContactSection = () => {
                 <div className="pt-8">
                   <h4 className="font-medium mb-4">Connect With Me</h4>
                   <div className="flex space-x-4 justify-center">
-                    <a
-                      href="https://www.linkedin.com/in/rahul-gupta-8497aa249/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Linkedin className="text-primary hover:opacity-75" />
-                    </a>
-                    <a
-                      href="https://github.com/Rahul32-code"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Github className="text-primary hover:opacity-75" />
-                    </a>
-                    <a
-                      href="https://www.instagram.com/rahuldeveloper/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Instagram className="text-primary hover:opacity-75" />
-                    </a>
-                    <a
-                      href="https://www.facebook.com/rahul.webdeveloper/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Facebook className="text-primary hover:opacity-75" />
-                    </a>
+                    {socialLinks.map((social, index) => (
+                      <a
+                        key={index}
+                        href={social.link}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {social.icon}
+                      </a>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -146,7 +151,9 @@ const ContactSection = () => {
 
             {/* Right column: contact form */}
             <div className="bg-card p-8 rounded-lg shadow-xs">
-              <h3 className="text-2xl font-semibold mb-6">Contact with Me 🚀</h3>
+              <h3 className="text-2xl font-semibold mb-6">
+                Contact with Me 🚀
+              </h3>
 
               <form ref={form} className="space-y-6" onSubmit={sendEmail}>
                 <div>
@@ -215,7 +222,8 @@ const ContactSection = () => {
                     isSubmitting ? "opacity-50 cursor-not-allowed" : ""
                   }`}
                 >
-                  {isSubmitting ? "Sending..." : "Send Message"} <Send size={26} />
+                  {isSubmitting ? "Sending..." : "Send Message"}{" "}
+                  <Send size={26} />
                 </button>
               </form>
             </div>
