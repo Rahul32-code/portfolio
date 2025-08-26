@@ -60,14 +60,13 @@ const ExperienceSection = () => {
               key={exp.id}
               className="bg-secondary rounded-xl shadow-lg p-6 border border-border hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="flex items-center gap-4 mb-4">
-                <div>
-                  <h3 className="text-lg font-semibold">{exp.position}</h3>
-                  <p className="text-sm text-muted-foreground">{exp.company}</p>
-                  <p className="text-xs text-glow text-primary font-semibold">
-                    {exp.date} · {exp.location}
-                  </p>
-                </div>
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold">{exp.position}</h3>
+                <p className="text-sm text-muted-foreground">{exp.company}</p>
+                <p className="text-xs text-glow text-primary font-semibold">
+                  {exp.date}
+                </p>
+                <p className="text-xs text-muted-foreground">{exp.location}</p>
               </div>
 
               <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 mb-3">
