@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
 import mern_basic_crud from "@/assets/project/mern_basic_crud.png";
 import landingpage from "@/assets/project/landingpage.jpeg";
+import thirdPartyApi from "@/assets/project/thirdPartyApi.png";
 
 const Projects = [
   {
@@ -24,11 +25,11 @@ const Projects = [
   },
   {
     id: 3,
-    title: "Project 3",
-    description: "Description of Project 3",
-    image: "projects/project3.jpg",
-    tags: ["tag2", "tag3"],
-    demoUrl: "https://example.com/project3",
+    title: "NEWS Api",
+    description: "A React app that fetches and displays data from a third-party API in real-time.",
+    image: thirdPartyApi,
+    tags: ["frontend"],
+    demoUrl: "https://newsapp-1tl4.onrender.com",
     githubUrl: "#",
   },
   {
