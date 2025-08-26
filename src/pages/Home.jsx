@@ -1,15 +1,15 @@
-import AboutSection from "../components/AboutSection";
-import ContactSection from "../components/ContactSection";
-import HeroSection from "../components/HeroSection";
-import Navbar from "../components/Navbar";
-import ProjectSection from "../components/ProjectSection";
-import SkillsSection from "../components/SkillsSection";
-import ThemeToggle from "../components/ThemeToggle";
+import AboutSection from "@/components/AboutSection";
+import ContactSection from "@/components/ContactSection";
+import HeroSection from "@/components/HeroSection";
+import Navbar from "@/components/Navbar";
+import ProjectSection from "@/components/ProjectSection";
+import SkillsSection from "@/components/SkillsSection";
+import ThemeToggle from "@/components/ThemeToggle";
 import StarsBackground from "@/components/StarsBackground";
 import Footer from "@/components/Footer";
-import ExperienceSection from "../components/ExperienceSection";
-import ButtonWhatsApp from "../components/ButtonWhatsApp";
-import PhoneCall from "../components/phoneCall";
+import ExperienceSection from "@/components/ExperienceSection";
+import ButtonWhatsApp from "@/components/ButtonWhatsApp";
+import PhoneCall from "@/components/phoneCall";
 
 const Home = () => {
   return (
