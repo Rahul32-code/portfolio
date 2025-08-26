@@ -9,7 +9,7 @@ import StarsBackground from "@/components/StarsBackground";
 import Footer from "@/components/Footer";
 import ExperienceSection from "@/components/ExperienceSection";
 import ButtonWhatsApp from "@/components/ButtonWhatsApp";
-import PhoneCall from "@/components/phoneCall";
+// import PhoneCall from "@/components/phoneCall";
 
 const Home = () => {
   return (
@@ -36,7 +36,7 @@ const Home = () => {
       {/* Footer */}
       <Footer />
       <ButtonWhatsApp />
-      <PhoneCall />
+      {/* <PhoneCall /> */}
     </div>
   );
 };
