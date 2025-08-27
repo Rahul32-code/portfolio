@@ -3,12 +3,18 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 import mern_basic_crud from "@/assets/project/mern_basic_crud.png";
 import landingpage from "@/assets/project/landingpage.jpeg";
 import thirdPartyApi from "@/assets/project/thirdPartyApi.png";
+import cncares from "@/assets/project/cncares.png";
+import indianails from "@/assets/project/indianails.png";
+import RockyPay from "@/assets/project/rockypay.png";
+import samtech from "@/assets/project/samtech.png";
+import typing from "@/assets/project/typing.png";
 
 const Projects = [
   {
     id: 1,
     title: "Basic CRUD Application",
-    description: "A full-stack MERN application for seamless data management with create, read, update, and delete functionality.",
+    description:
+      "A full-stack MERN application for seamless data management with create, read, update, and delete functionality.",
     image: mern_basic_crud,
     tags: ["backend"],
     demoUrl: "https://mern-basic-crud-kypo.onrender.com/",
@@ -17,7 +23,8 @@ const Projects = [
   {
     id: 2,
     title: "React Landing Page",
-    description: "A sleek, responsive React landing page designed with Tailwind CSS for fast styling and Lucide React icons for a modern touch.",
+    description:
+      "A sleek, responsive React landing page designed with Tailwind CSS for fast styling and Lucide React icons for a modern touch.",
     image: landingpage,
     tags: ["frontend"],
     demoUrl: "https://abhishekservice.abhishekdm.com/",
@@ -26,7 +33,8 @@ const Projects = [
   {
     id: 3,
     title: "NEWS Api",
-    description: "A React app that fetches and displays data from a third-party API in real-time.",
+    description:
+      "A React app that fetches and displays data from a third-party API in real-time.",
     image: thirdPartyApi,
     tags: ["frontend"],
     demoUrl: "https://newsapp-1tl4.onrender.com",
@@ -34,11 +42,52 @@ const Projects = [
   },
   {
     id: 4,
-    title: "Project 4",
-    description: "Description of Project 4",
-    image: "projects/project4.jpg",
-    tags: ["tag1", "tag4"],
-    demoUrl: "https://example.com/project4",
+    title: "CN CARES",
+    description:
+      "A single-vendor website with an admin panel built using PHP, designed for managing content and backend operations efficiently.",
+    image: cncares,
+    tags: ["backend"],
+    demoUrl: "https://cncares.in/",
+    githubUrl: "#",
+  },
+  {
+    id: 5,
+    title: "Indianails",
+    description:
+      "A single-vendor website with an admin panel built using PHP, designed for managing content and backend operations efficiently.",
+    image: indianails,
+    tags: ["backend"],
+    demoUrl: "https://indianails.com/",
+    githubUrl: "#",
+  },
+  {
+    id: 6,
+    title: "RockyPay",
+    description:
+      "A PHP-based payment gateway platform with dashboard, supporting single and bulk payouts for seamless transaction management.",
+    image: RockyPay,
+    tags: ["backend"],
+    demoUrl: "https://rockypay.com/",
+    githubUrl: "#",
+  },
+  {
+    id: 7,
+    title: "Samtech",
+    description:
+      "A PHP-based backend for selling courses with student login functionality and secure access to course content.",
+    image: samtech,
+    tags: ["backend"],
+    demoUrl: "https://samtechcomputers.in/",
+    githubUrl: "#",
+  },
+  {
+    id: 8,
+    title: "Typing",
+    description:
+      "A typing test tool using HTML, CSS, and JavaScript that compares user input with the original text, highlighting correct, incorrect, missing, and extra words with punctuation-aware accuracy.",
+    image: typing,
+    tags: ["frontend"],
+    demoUrl: "https://typingmaster-jjc0.onrender.com/",
     githubUrl: "#",
   },
 ];
@@ -51,9 +100,7 @@ const ProjectSection = () => {
   const filteredProjects =
     activeCategory === "frontend"
       ? Projects
-      : Projects.filter((project) =>
-          project.tags.includes(activeCategory)
-        );
+      : Projects.filter((project) => project.tags.includes(activeCategory));
 
   return (
     <section id="projects" className="py-24 px-4 relative">
