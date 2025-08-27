@@ -48,13 +48,13 @@ const skills = [
   { name: "Render", level: "85", category: "tools", icon: render },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["frontend", "backend", "tools"];
 
 const SkillsSection = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
+  const [activeCategory, setActiveCategory] = useState("frontend");
 
   const filteredSkills =
-    activeCategory === "all"
+    activeCategory === "frontend"
       ? skills
       : skills.filter((skill) => skill.category === activeCategory);
 

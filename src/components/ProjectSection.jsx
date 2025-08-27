@@ -43,13 +43,13 @@ const Projects = [
   },
 ];
 
-const categories = ["all", "frontend", "backend"];
+const categories = ["frontend", "backend"];
 
 const ProjectSection = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
+  const [activeCategory, setActiveCategory] = useState("frontend");
 
   const filteredProjects =
-    activeCategory === "all"
+    activeCategory === "frontend"
       ? Projects
       : Projects.filter((project) =>
           project.tags.includes(activeCategory)
@@ -145,7 +145,7 @@ const ProjectSection = () => {
         {/* GitHub CTA */}
         <div className="flex justify-center items-center mt-12">
           <a
-            href="https://github.com/rahulgupta2002"
+            href="https://github.com/Rahul32-code"
             target="_blank"
             rel="noopener noreferrer"
             className="cosmic-button w-fit flex items-center gap-2"
