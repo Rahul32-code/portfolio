@@ -92,13 +92,13 @@ const Projects = [
   },
 ];
 
-const categories = ["frontend", "backend"];
+const categories = ["all","frontend", "backend"];
 
 const ProjectSection = () => {
-  const [activeCategory, setActiveCategory] = useState("frontend");
+  const [activeCategory, setActiveCategory] = useState("all");
 
   const filteredProjects =
-    activeCategory === "frontend"
+    activeCategory === "all"
       ? Projects
       : Projects.filter((project) => project.tags.includes(activeCategory));
 
