@@ -218,7 +218,7 @@ const ContactSection = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`cosmic-button w-full flex justify-center items-center gap-2 ${
+                  className={`cosmic-button w-full flex justify-center items-center gap-2 cursor-pointer ${
                     isSubmitting ? "opacity-50 cursor-not-allowed" : ""
                   }`}
                 >

@@ -141,6 +141,7 @@ const ProjectSection = () => {
                 <img
                   src={project.image}
                   alt={project.title}
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform group-hover:scale-110 duration-500"
                 />
               </div>

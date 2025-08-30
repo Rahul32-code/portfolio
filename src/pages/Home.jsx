@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 import ExperienceSection from "@/components/ExperienceSection";
 import ButtonWhatsApp from "@/components/ButtonWhatsApp";
 import PhoneCallApp from "@/components/PhoneCallApp";
+import MyServiceButton from "../components/MyServiceButton";
 
 const Home = () => {
   return (
@@ -35,6 +36,7 @@ const Home = () => {
 
       {/* Footer */}
       <Footer />
+      <MyServiceButton />
       <ButtonWhatsApp />
       <PhoneCallApp />
     </div>
