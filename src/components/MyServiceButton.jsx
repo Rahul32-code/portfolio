@@ -1,4 +1,4 @@
-import { Zap } from "lucide-react";
+import { Code2 } from "lucide-react";
 import React from "react";
 
 const MyServiceButton = () => {
@@ -9,7 +9,7 @@ const MyServiceButton = () => {
         title="Rahul Service"
         className="p-2 border-2 border-teal-400 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-110 "
       >
-        <Zap className="text-teal-400" />
+        <Code2 className="text-teal-400" />
       </a>
     </div>
   );
