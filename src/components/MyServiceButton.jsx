@@ -7,6 +7,7 @@ const MyServiceButton = () => {
       <a
         href="https://rahul-service.vercel.app/"
         title="Rahul Service"
+        rel="noopener noreferrer"
         className="p-2 border-2 border-teal-400 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-110 "
       >
         <Code2 className="text-teal-400" />
