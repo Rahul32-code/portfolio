@@ -8,6 +8,7 @@ import indianails from "@/assets/project/indianails.png";
 import RockyPay from "@/assets/project/rockypay.png";
 import samtech from "@/assets/project/samtech.png";
 import typing from "@/assets/project/typing.png";
+import spotify from "@/assets/project/spotify.png";
 
 const Projects = [
   {
@@ -88,6 +89,16 @@ const Projects = [
     image: typing,
     tags: ["frontend"],
     demoUrl: "https://typingmaster-jjc0.onrender.com/",
+    githubUrl: "#",
+  },
+  {
+    id: 9,
+    title: "🎵 Spotify Clone – HTML, CSS, JavaScript",
+    description:
+      "A sleek, responsive music player clone with song cards, play/pause controls, dynamic seekbar, and volume slider. Built with pure HTML, CSS, and JS — no libraries — delivering smooth UI and real-time audio interactions.",
+    image: spotify,
+    tags: ["frontend"],
+    demoUrl: "https://spotifyclone.digitalway.in/",
     githubUrl: "#",
   },
 ];
