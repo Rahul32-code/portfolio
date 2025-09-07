@@ -133,8 +133,8 @@ const ProjectSection = () => {
               onClick={() => setActiveCategory(cat)}
               className={`px-4 py-2 rounded-full border text-sm font-medium transition duration-300 cursor-pointer ${
                 activeCategory === cat
-                  ? "bg-primary text-white"
-                  : "text-white border-primary"
+                  ? "bg-primary text-muted-foreground"
+                  : "text-muted-foreground border-primary"
               }`}
             >
               {cat.charAt(0).toUpperCase() + cat.slice(1)}
