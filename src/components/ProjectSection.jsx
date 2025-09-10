@@ -43,7 +43,7 @@ const Projects = [
     githubUrl: "https://github.com/Rahul32-code/newsapp",
   },
   {
-    id: 3,
+    id: 4,
     title: "Qrcode Generator",
     description:
       "A html css js app that fetches and displays data from a third-party API in real-time.",
@@ -53,7 +53,7 @@ const Projects = [
     githubUrl: "https://github.com/Rahul32-code/qrCodeGenrator",
   },
   {
-    id: 4,
+    id: 5,
     title: "CN CARES",
     description:
       "A single-vendor website with an admin panel built using PHP, designed for managing content and backend operations efficiently.",
@@ -63,7 +63,7 @@ const Projects = [
     githubUrl: "#",
   },
   {
-    id: 5,
+    id: 6,
     title: "Indianails",
     description:
       "A single-vendor website with an admin panel built using PHP, designed for managing content and backend operations efficiently.",
@@ -73,7 +73,7 @@ const Projects = [
     githubUrl: "#",
   },
   {
-    id: 6,
+    id: 7,
     title: "RockyPay",
     description:
       "A PHP-based payment gateway platform with dashboard, supporting single and bulk payouts for seamless transaction management.",
@@ -83,7 +83,7 @@ const Projects = [
     githubUrl: "#",
   },
   {
-    id: 7,
+    id: 8,
     title: "Samtech",
     description:
       "A PHP-based backend for selling courses with student login functionality and secure access to course content.",
@@ -93,7 +93,7 @@ const Projects = [
     githubUrl: "#",
   },
   {
-    id: 8,
+    id: 9,
     title: "Typing",
     description:
       "A typing test tool using HTML, CSS, and JavaScript that compares user input with the original text, highlighting correct, incorrect, missing, and extra words with punctuation-aware accuracy.",
@@ -103,7 +103,7 @@ const Projects = [
     githubUrl: "https://github.com/Rahul32-code/typingMaster",
   },
   {
-    id: 9,
+    id: 10,
     title: "🎵 Spotify Clone – HTML, CSS, JavaScript",
     description:
       "A sleek, responsive music player clone with song cards, play/pause controls, dynamic seekbar, and volume slider. Built with pure HTML, CSS, and JS — no libraries — delivering smooth UI and real-time audio interactions.",
