@@ -3,7 +3,7 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 import mern_basic_crud from "@/assets/project/mern_basic_crud.png";
 import landingpage from "@/assets/project/landingpage.jpeg";
 import thirdPartyApi from "@/assets/project/thirdPartyApi.png";
-import qrGenrator from "@/assets/project/QrGenrator.png";
+import qrGenrator from "@/assets/project/qrGenrator.png";
 import cncares from "@/assets/project/cncares.png";
 import indianails from "@/assets/project/indianails.png";
 import RockyPay from "@/assets/project/rockypay.png";
