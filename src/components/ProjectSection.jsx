@@ -3,6 +3,7 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 import mern_basic_crud from "@/assets/project/mern_basic_crud.png";
 import landingpage from "@/assets/project/landingpage.jpeg";
 import thirdPartyApi from "@/assets/project/thirdPartyApi.png";
+import qrGenrator from "@/assets/project/QrGenrator.png";
 import cncares from "@/assets/project/cncares.png";
 import indianails from "@/assets/project/indianails.png";
 import RockyPay from "@/assets/project/rockypay.png";
@@ -39,7 +40,17 @@ const Projects = [
     image: thirdPartyApi,
     tags: ["frontend"],
     demoUrl: "https://newsapp-1tl4.onrender.com",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Rahul32-code/newsapp",
+  },
+  {
+    id: 3,
+    title: "Qrcode Generator",
+    description:
+      "A html css js app that fetches and displays data from a third-party API in real-time.",
+    image: qrGenrator,
+    tags: ["frontend"],
+    demoUrl: "https://qr-code-genrator-iota.vercel.app",
+    githubUrl: "https://github.com/Rahul32-code/qrCodeGenrator",
   },
   {
     id: 4,
@@ -89,7 +100,7 @@ const Projects = [
     image: typing,
     tags: ["frontend"],
     demoUrl: "https://typingmaster-jjc0.onrender.com/",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Rahul32-code/typingMaster",
   },
   {
     id: 9,

@@ -56,7 +56,12 @@ const Navbar = () => {
             <span className="text-glow text-foreground">Rahul</span> Portfolio
           </span> */}
           <div className="relative z-10">
-              <img src={logo} alt="Logo" loading="lazy" className="w-50  overflow-hidden" />
+            <img
+              src={logo}
+              alt="Logo"
+              loading="lazy"
+              className="w-50  overflow-hidden"
+            />
           </div>
         </a>
 
