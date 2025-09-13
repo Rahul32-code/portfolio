@@ -112,6 +112,16 @@ const Projects = [
     demoUrl: "https://spotifyclone.digitalway.in/",
     githubUrl: "#",
   },
+  {
+    id: 11,
+    title: "🎵 Spotify Clone – HTML, CSS, JavaScript",
+    description:
+      "A sleek, responsive music player clone with song cards, play/pause controls, dynamic seekbar, and volume slider. Built with pure HTML, CSS, and JS — no libraries — delivering smooth UI and real-time audio interactions.",
+    image: spotify,
+    tags: ["frontend"],
+    demoUrl: "https://spotifyclone.digitalway.in/",
+    githubUrl: "#",
+  },
 ];
 
 const categories = ["all","frontend", "backend"];

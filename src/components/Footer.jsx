@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
       <div className="flex flex-row-reverse justify-between items-center w-full">
         <p className="text-sm text-muted-foreground text-center flex-1">
-          Rahul Gupta &copy; {new Date().getFullYear()}. All rights reserved.
+          Rahul Gupta &copy; 2025. All rights reserved.
         </p>
         <a
           href="#hero"
