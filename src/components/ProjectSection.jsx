@@ -10,6 +10,7 @@ import RockyPay from "@/assets/project/rockypay.png";
 import samtech from "@/assets/project/samtech.png";
 import typing from "@/assets/project/typing.png";
 import spotify from "@/assets/project/spotify.png";
+import modernWeb from "@/assets/project/modern-web.png";
 
 const Projects = [
   {
@@ -121,6 +122,16 @@ const Projects = [
     tags: ["frontend"],
     demoUrl: "https://spotifyclone.digitalway.in/",
     githubUrl: "#",
+  },
+  {
+    id: 12,
+    title: "Modern Website React",
+    description:
+"A Modern Website React is a dynamic, fast, and interactive website built using React.js, focused on reusable components and efficient rendering for smooth user experiences.",
+    image: modernWeb,
+    tags: ["frontend"],
+    demoUrl: "https://mordern-website-two.vercel.app/",
+    githubUrl: "https://github.com/Rahul32-code/mordern-website/tree/main",
   },
 ];
 
