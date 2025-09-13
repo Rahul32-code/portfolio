@@ -115,16 +115,6 @@ const Projects = [
   },
   {
     id: 11,
-    title: "🎵 Spotify Clone – HTML, CSS, JavaScript",
-    description:
-      "A sleek, responsive music player clone with song cards, play/pause controls, dynamic seekbar, and volume slider. Built with pure HTML, CSS, and JS — no libraries — delivering smooth UI and real-time audio interactions.",
-    image: spotify,
-    tags: ["frontend"],
-    demoUrl: "https://spotifyclone.digitalway.in/",
-    githubUrl: "#",
-  },
-  {
-    id: 12,
     title: "Modern Website React",
     description:
 "A Modern Website React is a dynamic, fast, and interactive website built using React.js, focused on reusable components and efficient rendering for smooth user experiences.",
