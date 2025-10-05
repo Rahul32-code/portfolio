@@ -11,8 +11,20 @@ import samtech from "@/assets/project/samtech.png";
 import typing from "@/assets/project/typing.png";
 import spotify from "@/assets/project/spotify.png";
 import modernWeb from "@/assets/project/modern-web.png";
+import blog from "@/assets/project/blog.png";
+
 
 const Projects = [
+  {
+    id: 12,
+    title: "MERN(Blog) Application",
+    description:
+      "Blog Application can efficiently help users manage their blogs and speed up the writing process using AI-powered content generation. Whether you're a blogger, writer, or content creator, this app can simplify your workflow and help you publish high-quality content quickly.",
+    image: blog,
+    tags: ["backend"],
+    demoUrl: "https://mern-blog-fo0r.onrender.com/",
+    githubUrl: "https://github.com/Rahul32-code/MERN-BLOG-/tree/main",
+  },
   {
     id: 1,
     title: "Basic CRUD Application",
@@ -117,7 +129,7 @@ const Projects = [
     id: 11,
     title: "Modern Website React",
     description:
-"A Modern Website React is a dynamic, fast, and interactive website built using React.js, focused on reusable components and efficient rendering for smooth user experiences.",
+      "A Modern Website React is a dynamic, fast, and interactive website built using React.js, focused on reusable components and efficient rendering for smooth user experiences.",
     image: modernWeb,
     tags: ["frontend"],
     demoUrl: "https://mordern-website-two.vercel.app/",
@@ -125,7 +137,7 @@ const Projects = [
   },
 ];
 
-const categories = ["all","frontend", "backend"];
+const categories = ["all", "frontend", "backend"];
 
 const ProjectSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
