@@ -36,7 +36,7 @@ const Home = () => {
 
       {/* Footer */}
       <Footer />
-      {/* <MyServiceButton /> */}
+      <MyServiceButton />
       <ButtonWhatsApp />
       <PhoneCallApp />
     </div>
