@@ -19,9 +19,12 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-muted text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-          <span className="text-primary">Hi, I’m Rahul Gupta, a Full Stack Developer </span>
-         passionate about creating dynamic, responsive web
-           applications with clean code and seamless user experiences.
+            Hi,{" "}
+            <span className="text-primary">
+              I’m Rahul Gupta, Full Stack Developer{" "}
+            </span>
+            passionate about creating dynamic, responsive web applications with
+            clean code and seamless user experiences.
           </p>
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
             <a
