@@ -19,8 +19,9 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-muted text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I am a <span className="text-primary">Full Stack Developer</span>{" "}
-            I am a full-stack devloper with over 2 years of experience in building scalable web applications. Skilled in both front-end and back-end devlopement.
+          <span className="text-primary">Hi, I’m Rahul Gupta, a Full Stack Developer </span>
+         passionate about creating dynamic, responsive web
+           applications with clean code and seamless user experiences.
           </p>
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
             <a
@@ -33,11 +34,10 @@ const HeroSection = () => {
         </div>
       </div>
 
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce ">
-            <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
-            <ArrowDown className="w-6 h-6 text-primary" />
-        </div>
-
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce ">
+        <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
+        <ArrowDown className="w-6 h-6 text-primary" />
+      </div>
     </section>
   );
 };
